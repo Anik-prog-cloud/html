@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: #1e1e2f;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+        
+            form {
+                background: #29293d;
+                padding: 25px;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                max-width: 380px;
+                width: 100%;
+            }
+        
+            h1 {
+                text-align: center;
+                color: #ffcc00;
+                margin-bottom: 15px;
+            }
+        
+            div {
+                margin-bottom: 15px;
+            }
+        
+            label {
+                font-weight: 500;
+                display: block;
+                margin-bottom: 5px;
+            }
+        
+            input, select, textarea {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 6px;
+                font-size: 14px;
+                background: #3a3a54;
+                color: #fff;
+            }
+        
+            input:focus, select:focus, textarea:focus {
+                border: 2px solid #ffcc00;
+                outline: none;
+            }
+        
+            button {
+                width: 100%;
+                background: #ffcc00;
+                color: #29293d;
+                padding: 12px;
+                border: none;
+                border-radius: 6px;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+        
+            button:hover {
+                background: #e6b800;
+            }
+        
+            input[type="radio"], input[type="checkbox"] {
+                width: auto;
+                margin-right: 5px;
+            }
+        
+            p {
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #ffcc00;
+            }
+        </style> -->
+        
+    </head>
+    <body>
+        <h1>Forms in HTML</h1>
+        <form action="/submit.php">
+            <div>
+                <label for="name">Name</label>
+                <input id="text" placeholder="Enter name motherfucker" required>
+            </div>
+            <div>
+                <label for="tel">Phone</label>
+                <input id="tel" placeholder="Enter number of your" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter email"
+                    required>
+            </div>
+            <!-- password input -->
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="password"
+                    placeholder="Enter password" required>
+            </div>
+            <!-- Date input -->
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input id="dob" type="date" required>
+            </div>
+            <!-- Dropdown (select input) for gender -->
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- Radio button for subcription plan -->
+            <div>
+                <p>Subcription plan</p>
+                <input id="basic" type="radio" name="subcription">
+                <label for="basic">Basic</label>
+
+                <input id="premium" type="radio" name="subcription">
+                <label for="premium">Premium</label>
+
+                <input id="vip" type="radio" name="subcription">
+                <label for="vip">Vip</label>
+            </div>
+            <!-- check agreement terms -->
+             <div>
+                <input id="terms" type="checkbox" required>
+                <label for="terms">I agree to the terms and conditions</label>
+             </div>
+             <!-- text area for comments -->
+              <div>
+                <label for="comments">Comments</label>
+                <br>
+                <textarea name="comments" id="comments" placeholder="Enter your comments" 
+                rows="4"></textarea>
+              </div>
+              <div>
+                <button type="submit">Submit</button>
+              </div>
+
+        </form>
+    </body>
+</html>
