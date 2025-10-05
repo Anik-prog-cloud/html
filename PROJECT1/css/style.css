@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #d32f2f; /* Red Theme */
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #ffccbc; /* Lighter Red */
+}
+
+/* Main Section */
+main {
+    background: url('https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png') center/cover no-repeat;
+    height: 80vh; /* Keeps it tall */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    position: relative;
+}
+
+main p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main input {
+    width: 40%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+}
+
+/* Food Delivery Section - Moved Down */
+section {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 30px;
+    width: 80%;
+    margin: 50px auto; /* Moved downward */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Food Items */
+.food-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-5px);
+}
+
+.food-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.food-card h3 {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #b71c1c;
+    color: white;
+    font-size: 14px;
+}
